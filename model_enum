@@ -1,0 +1,17 @@
+class 
+{
+    /**
+     * Possible values of this enum
+     */
+    
+    /**
+     * Gets allowable values of the enum
+     * @return string[]
+     */
+    public static function getAllowableEnumValues()
+    {
+        return [
+            
+        ];
+    }
+}
