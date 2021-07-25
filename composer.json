@@ -1,0 +1,54 @@
+{
+    "name": "dismoi/api-client",
+    "version": "0.0.1",
+    "description": "OpenAPI documentation and _sandbox_ for **DisMoi** (_Tell Me_ in french), a FLOSS web annotations project to turn the tide of the opinion wars back in favor of the internauts.  - [Official Website](https://www.dismoi.io/) - [Source Code](https://github.com/dis-moi) - [Report Issues](https://github.com/dis-moi/backend/issues) (_please!_)",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://dismoi.io",
+    "license": "AGPL-3.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "DisMoi",
+            "homepage": "https://dismoi.io"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "autoload": {
+        "psr-4": { "DisMoi\\Client\\" : "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "DisMoi\\Client\\Test\\" : "test/" }
+    },
+    "scripts": {
+      "fix-cs": [
+        "php-cs-fixer fix"
+      ],
+      "check-cs": [
+        "php-cs-fixer fix --dry-run --stop-on-violation"
+      ],
+      "test": [
+        "phpunit test/ --exclude-group dev"
+      ],
+      "test-dev": [
+        "phpunit test/ --group dev"
+      ]
+    }
+}

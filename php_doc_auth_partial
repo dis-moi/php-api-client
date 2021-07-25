@@ -1,0 +1,4 @@
+
+// Configure API key authorization: apiKey
+$config = DisMoi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+
